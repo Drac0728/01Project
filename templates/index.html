@@ -1,0 +1,14 @@
+{% extends"layout.html" %}
+{% block body %}
+<a class="offset-11" href="/Addpost"><button class="btn btn-success my-3">Add Post</button></a>
+
+{% for post in posts %}
+<div class="card offset-1 col-10 my-5">
+    <h3 class="card-header card-title">{{ post.title }}</h3>
+    <div class="card-body">
+        <p>{{ post.content }}</p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock body %}

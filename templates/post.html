@@ -1,0 +1,13 @@
+{% extends"layout.html" %}
+{% block body %}
+<a href="/"><button class="btn btn-outline-danger my-5 ml-2">Go Back</button></a>
+<form action="" method="post">
+    <div class="form-group">
+        <label for="Title" class="display-5" style="color: white;">Title</label>
+        <input class="form-control form-control-lg" name="title" id="Title">
+        <label for="exampleFormControlTextarea1" class="display-5" style="color: white;">Content</label>
+        <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button class="btn btn-success offset-11" type="submit">Submit</button>
+</form>
+{% endblock body %}
